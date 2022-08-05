@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="box-shadow: 20px 1px 50px 15px grey">
   <div class="container">
     <img src="image/logo.png" alt="logo" style="width: 50px; height: 50px;">
-    <a class="navbar-brand" href="#" style="font-size: 25px">Mobile Store</a>
+    <a class="navbar-brand" href="#" style="font-size: 25px">Cellphone Store</a>
     <button class="navbar-toggler" type=
     "button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -14,10 +14,10 @@
             <Link class="nav-link" :class="{'selected': $page.component == 'Home'}" href="/">Home</Link>
         </li>
         <li class="nav-item" style="margin-right: 15px">
-            <Link class="nav-link" :class="{'selected': $page.component == 'Cellphone'}" href="/mobile-devices">Mobile Devices</Link>
+            <Link class="nav-link" :class="{'selected': $page.component == 'Cellphone'}" href="/cellphone-devices">Cellphone Devices</Link>
         </li>
         <li class="nav-item" style="margin-right: 15px">
-            <Link class="nav-link" :class="{'selected': $page.component == 'About'}" href="/about">About Mobile Store</Link>
+            <Link class="nav-link" :class="{'selected': $page.component == 'About'}" href="/about">About Cellphone Store</Link>
         </li>
         <li class="nav-item">
             <Link class="nav-link" :class="{'selected': $page.component == 'News'}" href="/news">Mobile News</Link>
@@ -32,14 +32,14 @@
 </section>
     <footer class="text-center">
         <section class="itemss">
-        <a class="iconss" href="https://www.instagram.com" target="_blank"><i style="color: orangered; margin-top: 100px" class="fa fa-instagram"></i></a>
-        <a class="iconss" href="https://www.facebook.com/1down" target="_blank"><i style="color: rgb(26, 26, 242); margin-top: 100px" class="fa fa-facebook"></i></a>
-        <a class="iconss" href="https://www.gmail.com" target="_blank"><i style="color: green; margin-top: 100px" class="fa fa-google"></i></a>
-        <a class="iconss" href="https://www.twitter.com" target="_blank"><i style="color: skyblue; margin-top: 100px" class="fa fa-twitter"></i></a>
+        <span class="barrel"><a class="iconss" href="https://www.instagram.com" target="_blank"><i style="color: whitesmoke; margin-top: 100px" class="fa fa-instagram"></i></a></span>
+        <span class="barrel"><a class="iconss" href="https://www.facebook.com/1down" target="_blank"><i style="color: whitesmoke; margin-top: 100px; padding: 4px;" class="fa fa-facebook"></i></a></span>
+        <span class="barrel"><a class="iconss" href="https://www.gmail.com" target="_blank"><i style="color: whitesmoke; margin-top: 100px" class="fa fa-google"></i></a></span>
+        <span class="barrel"><a class="iconss" href="https://www.twitter.com" target="_blank"><i style="color: whitesmoke; margin-top: 100px;" class="fa fa-twitter"></i></a></span>
         <hr class="new_1">
-        <h5 style="margin-top: 2px">Contact Us</h5>
+        <h5 style="margin-top: 10px">Contact Us</h5>
         <hr style="width: 80px; margin: auto; padding-top: 10px;">
-        <p style="color: white; margin-top: 15px; font-size: 13px;"> Copyright &copy; 2022. All rights reserved.</p>
+        <p style="color: white; margin-top: 15px; font-size: 13xpx;"> Copyright &copy; 2022. All rights reserved.</p>
         </section>
     </footer>
 </template>
@@ -69,16 +69,14 @@ section {
 
 }
 .new_1 {
-    width: 150px;
+    width: 180px;
     border-radius: 50%;
     border: 3px solid #cccccc;
     border-bottom: none;
     margin: auto;
+    margin-top: 10px;
 }
 .iconss {
-    margin-left: 10px;
-    padding: 5px;
-    border-radius: 20px;
     margin: auto;
     font-size: 20px;
 }.iconss i:hover {
@@ -87,6 +85,15 @@ section {
 footer {
     background-color: rgb(0, 0, 54);
     height: 250px;
+}
+.barrel {
+    border: 1px solid rgb(58, 58, 99);
+    padding: 6px;
+    background-color: rgb(60, 57, 107);
+    border-radius: 12px;
+    margin-bottom: 50px;
+    margin-left: 13px;
+    margin-right: 6px;
 }
 .itemss {
     background-color: rgb(0, 0, 54);

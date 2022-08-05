@@ -188,14 +188,6 @@ export default {
   z-index:1;
   overflow:hidden;
 }
-.slide img{
-  width:100%;
-  height:100%;
-}
-.slide img{
-  width:100%;
-  height:100%;
-}
 .image{
   width:100%;
   height:100%;

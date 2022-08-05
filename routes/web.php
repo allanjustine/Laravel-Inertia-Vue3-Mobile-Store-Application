@@ -18,4 +18,4 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class, 'home']);
 Route::get('/about', [PageController::class, 'about']);
 Route::get('/news', [PageController::class, 'news']);
-Route::get('/mobile-devices', [CellphoneController::class, 'index']);
+Route::get('/cellphone-devices', [CellphoneController::class, 'index']);

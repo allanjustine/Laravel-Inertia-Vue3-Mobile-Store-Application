@@ -4,9 +4,8 @@
     <h1 style="color: whitesmoke"><span style="font-weight: bold;">All</span> Devices</h1>
 
     <div class="row" style="margin: 0 60px;">
-        <div class="card mb-3" v-for="cellphone in cellphones" :key="cellphone.id">
-            <img src="/image/logo.png" alt="logo" style="width: 150px; margin: auto">
-            <div class="card-header" style="color: rgb(255, 255, 255); border-bottom: 1px solid whitesmoke; border-radius: 10px; background-color: rgba(255, 255, 255, 0.041);">
+        <div class="card mb-3" v-for="cellphone in cellphones" :key="cellphone.id" style="background-color: rgb(0, 0, 54);">
+            <div class="card-header" style="color: rgb(255, 255, 255); border-bottom: 1px solid whitesmoke; border-radius: 10px; background-color: rgba(255, 255, 255, 0.041); margin-top: 20px;">
                 <h4 style="font-size: 22px; text-align: center;">{{ cellphone.brand_name }} {{ cellphone.model }}</h4>
             </div>
             <div class="card-body" style="color: rgb(255, 255, 255);">
@@ -50,8 +49,9 @@ export default {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.264);
     transition: 0.3s;
     margin: 1%;
-    border: 1px solid black;
+    border: 1px solid rgb(129, 128, 128);
     background-color: rgb(0, 0, 70);
+    border-radius: 15px;
 }
 .buttonn2 {
     width: 150px;
